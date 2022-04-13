@@ -1,24 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
+	const toda_env = process.env
+	const	username = process.env.REACT_APP_USERNAME
+	const	password = process.env.REACT_APP_PASSWORD
+
+	console.log(toda_env, username, password)
+	
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+		<div>Nave</div>
   );
 }
 
